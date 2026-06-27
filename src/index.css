@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", "Cinzel", Georgia, Cambria, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-bg: #09090b;
+  --color-brand-card: rgba(24, 24, 27, 0.5);
+  --color-brand-gold: #dfb743;
+  --color-brand-gold-glow: rgba(223, 183, 67, 0.1);
+  --color-brand-gray: #71717a;
+}
+
+/* Active tab override styling matching Sleek Interface */
+.active-tab {
+  background-color: #18181b !important;
+  color: #dfb743 !important;
+  border-color: rgba(223, 183, 67, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(223, 183, 67, 0.08) !important;
+}
+
+/* Custom range slider and luxury gold glow effects */
+@layer utilities {
+  .glow-gold {
+    box-shadow: 0 0 25px rgba(223, 183, 67, 0.12);
+  }
+  .text-glow-gold {
+    text-shadow: 0 0 10px rgba(223, 183, 67, 0.4);
+  }
+}
+
+/* Custom Range Slider Thumb styles matching the Sleek design */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #dfb743 !important;
+  cursor: pointer;
+  border-radius: 50% !important;
+  border: 3px solid #09090b !important;
+  box-shadow: 0 0 10px rgba(223, 183, 67, 0.5);
+  margin-top: -6px; /* Offset for range track spacing */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #dfb743 !important;
+  cursor: pointer;
+  border-radius: 50% !important;
+  border: 3px solid #09090b !important;
+  box-shadow: 0 0 10px rgba(223, 183, 67, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+body {
+  background-color: #09090b;
+  color: #f4f4f5;
+  font-family: var(--font-sans);
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-up {
+  animation: fadeSlideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Bulk Trade Dashboard",
+  "description": "A Web3-style Bulk Trade DeFi Analytics, Rewards, and Staking Dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
