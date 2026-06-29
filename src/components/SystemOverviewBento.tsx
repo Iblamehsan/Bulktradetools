@@ -160,7 +160,7 @@ export function SystemOverviewBento() {
         <div className="flex flex-col gap-3 font-mono text-xs text-zinc-400">
           <div className="flex justify-between border-b border-zinc-800/50 pb-2">
             <span>Active TVL</span>
-            <a href="https://early.bulk.trade/predeposits" target="_blank" rel="noopener noreferrer" className="text-[#dfb743] hover:underline font-bold flex items-center gap-1">
+            <a href="https://early.bulk.trade/deposit" target="_blank" rel="noopener noreferrer" className="text-[#dfb743] hover:underline font-bold flex items-center gap-1">
               <span>$39,562,728</span>
               <svg className="w-3 h-3 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -177,7 +177,7 @@ export function SystemOverviewBento() {
           </div>
         </div>
         <p className="text-[11px] text-zinc-400 leading-relaxed">
-          Bulk Trade is in an early growth phase featuring pre-deposit campaigns. The exact TVL of <strong>$39,562,728</strong> is verifiable at <a href="https://early.bulk.trade/predeposits" target="_blank" rel="noopener noreferrer" className="text-[#dfb743] hover:underline">early.bulk.trade/predeposits</a>.
+          Bulk Trade is in an early growth phase featuring pre-deposit campaigns. The exact TVL of <strong>$39,562,728</strong> is verifiable at <a href="https://early.bulk.trade/deposit" target="_blank" rel="noopener noreferrer" className="text-[#dfb743] hover:underline">early.bulk.trade/deposit</a>.
         </p>
       </motion.div>
     </motion.div>
